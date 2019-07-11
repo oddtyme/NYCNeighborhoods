@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'NYCNeighborhoods';
   lat: number = 40.7128;
-  long: number = 74.0060;
+  lng: number = -74.0060;
 }
