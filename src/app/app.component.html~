@@ -5,17 +5,15 @@
   </h1>
 </div>
 
-<div id="map-container">
-  <!-- this creates a google map on the page with the given lat/lng from -->
-  <!-- the component as the initial center of the map: -->
-  <agm-map #AgmMap [zoom]="zoom" [latitude]="lat" [longitude]="lng" (mapReady)="onMapReady($event)">
-	    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-  </agm-map>
+<div id="main-container">
+  <app-sidebar></app-sidebar>
+  <div id="map-container">
+    <!-- this creates a google map on the page with the given lat/lng from -->
+    <!-- the component as the initial center of the map: -->
+    <agm-map #AgmMap [zoom]="zoom" [latitude]="lat" [longitude]="lng" (mapReady)="onMapReady($event)">
+      <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+    </agm-map>
+  </div>
 </div>
-
-<mat-drawer-container class="info-sidebar">
-  <mat-drawer mode="side" opened>Drawer Content</mat-drawer>
-  <mat-drawer-content>Main conetent</mat-drawer-content>
-</mat-drawer-container>
 
 <router-outlet></router-outlet>

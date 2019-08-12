@@ -1,6 +1,21 @@
-#map-container {
-	height: 100vh;
+#main-container {
+	height:90vh;
+	position: relative;
 }
+
+#map-container {
+	height: 100%;
+}
+
+app-sidebar {
+	width: 30%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
 
 agm-map {
 	  height: 100%;

@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { AgmCoreModule } from '@agm/core';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { MatSidenavModule} from '@angular/material/sidenav'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -14,12 +16,14 @@ import { SidebarComponent } from './sidebar/sidebar.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     CommonModule,
     FormsModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCVgshuZRluM1wx-iD7b93o8mGZnJdXrIQ',
       libraries: ['drawing']
     }),
+    MatSidenavModule,
     AppRoutingModule
   ],
   providers: [],
