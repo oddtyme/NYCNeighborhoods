@@ -30,13 +30,18 @@ export class AppComponent {
 
     var woodLawn = new google.maps.Polygon({
       path:woodlawnCoords,
-      strokeColor: '#FF0000',
-      strokeOpacity: 0.8,
-      strokeWeight: 2,
-      fillcolor: '#FF0000'
-      fillOpacity: 0.35
+      strokeColor: '#99badd',
+      fillcolor: '#99badd',
     });
 
     woodLawn.setMap(map);
+
+    google.maps.event.addListener(woodLawn, "mouseover",function() {
+      this.setOptions({fillColor: "#4997d0", strokeColor: "#4997d0"});
+    });
+
+    google.maps.event.addListener(woodLawn, "mouseout",function() {
+      this.setOptions({fillColor: "#99badd", strokeColor: "#99badd"});
+    });
   }
 }
