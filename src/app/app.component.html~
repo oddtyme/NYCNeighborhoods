@@ -4,7 +4,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div id="header">
   <h1>
-    {{ title }}!
+    {{ title }}
   </h1>
 </div>
 
