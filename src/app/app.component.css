@@ -1,3 +1,8 @@
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+
 #main-container {
 	height:90vh;
 	position: relative;
