@@ -31,7 +31,7 @@ export class AppComponent {
     var woodLawn = new google.maps.Polygon({
       path:woodlawnCoords,
       strokeColor: '#99badd',
-      fillcolor: '#99badd',
+      fillColor: '#99badd',
     });
 
     woodLawn.setMap(map);
