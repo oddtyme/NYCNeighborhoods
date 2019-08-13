@@ -19,7 +19,6 @@ export class AppComponent {
     this.initPolygon(map);
   }
 
-
   initPolygon(map: any) {
     var woodlawnCoords = [
       {lat: 40.895262, lng: -73.876929},
@@ -35,6 +34,28 @@ export class AppComponent {
     });
 
     woodLawn.setMap(map);
+   
+
+    function smoothZoom(map, max, cnt) {
+      console.log(cnt);
+      console.log(max);
+
+      if (cnt >= max) {
+        return;
+      } 
+      else {
+          google.maps.event.addListenerOnce(map, 'zoom_changed', function(event) {
+	  smoothZoom(map, max, cnt + 1);
+        });
+
+        setTimeout(function(){map.setZoom(cnt)}, 80);
+      }
+    }
+
+    woodLawn.addListener('click', function() {
+      map.panTo({lat: 40.899284, lng: -73.874}, true);
+      smoothZoom(map, 17, map.getZoom());
+    });
 
     google.maps.event.addListener(woodLawn, "mouseover",function() {
       this.setOptions({fillColor: "#4997d0", strokeColor: "#4997d0"});
@@ -44,5 +65,6 @@ export class AppComponent {
       this.setOptions({fillColor: "#99badd", strokeColor: "#99badd"});
     });
   }
+
 }
 
