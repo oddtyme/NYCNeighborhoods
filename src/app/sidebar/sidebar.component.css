@@ -4,3 +4,14 @@
   margin: 20px;
   border: 1px solid #555;
 }
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px;
+}
+
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
