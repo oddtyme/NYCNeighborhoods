@@ -11,5 +11,26 @@ p {
 }
 
 #logo {
-  align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  font-family: 'Montserrat', sans-serif;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size:20px;
+  color: #111;
+  display: block;
+}
+
+mat-drawer-content {
+  overflow-x: hidden;
+  position: relative;
+  left: 20px; 
+}
+
+a:hover {
+  color: #f1f1f1;
 }
