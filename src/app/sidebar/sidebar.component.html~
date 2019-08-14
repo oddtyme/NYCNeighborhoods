@@ -9,7 +9,7 @@
 	    <button id="crime">Crime</button>
 	  </mat-drawer>
 	    <mat-drawer-content>
-	      <div id="intro">
+	      <div id="content-box">
 	        <p>Welcome to NYCNeighborhoods!</p>
 		<p>This application is designed to provide helpful information about each neighborhood in New York City.</p>
 		<p>You can view the information categories on the sidebar to the left.</p>
