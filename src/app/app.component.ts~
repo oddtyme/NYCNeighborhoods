@@ -22,6 +22,10 @@ export class AppComponent {
     this.initPolygon(map);
   }
 
+  getIntro() {
+    return this.intro;
+  }
+
   initPolygon(map: any) {
     var woodlawnCoords = [
       {lat: 40.895262, lng: -73.876929},
@@ -40,9 +44,6 @@ export class AppComponent {
    
 
     function smoothZoom(map, max, cnt) {
-      console.log(cnt);
-      console.log(max);
-
       if (cnt >= max) {
         return;
       } 
@@ -58,7 +59,12 @@ export class AppComponent {
     woodLawn.addListener('click', function() {
       map.panTo({lat: 40.899284, lng: -73.874}, true);
       smoothZoom(map, 17, map.getZoom());
+
+      console.log(this.intro);
+
       this.intro = false;
+
+      console.log(this.intro + 'is the value of intro.');
 
       var content = document.getElementById('content-box');
       content.childNodes[0].textContent = "Woodlawn";

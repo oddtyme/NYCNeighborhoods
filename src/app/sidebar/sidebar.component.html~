@@ -1,12 +1,12 @@
 <mat-drawer-container class="sidebar-container">
 	  <mat-drawer mode="side" opened>
-	    <button id="summary" ng-Click="showSummary()">Summary</button>
-	    <button id="living" onClick="showLiving()">Living</button>
-	    <button id="food" onClick="showFood()">Food</button>
-	    <button id="rec" onClick="showRec()">Recreation</button>
-	    <button id="transit" onClick="showTransit()">Transit</button>
-	    <button id="schools" onClick="showSchools()">Schools</button>
-	    <button id="crime">Crime</button>
+	    <button id="summary" (click)="showSummary()">Summary</button>
+	    <button id="living" (click)="showLiving()">Living</button>
+	    <button id="food" (click)="showFood()">Food</button>
+	    <button id="rec" (click)="showRec()">Recreation</button>
+	    <button id="transit" (click)="showTransit()">Transit</button>
+	    <button id="schools" (click)="showSchools()">Schools</button>
+	    <button id="crime" (click)="showCrime">Crime</button>
 	  </mat-drawer>
 	    <mat-drawer-content>
 	      <div id="content-box">

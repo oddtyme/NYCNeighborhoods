@@ -16,10 +16,11 @@ export class AppComponent {
   lat: number = 40.7128;
   lng: number = -74.0060;
   zoom: number = 10.75;
-  intro: boolean = true;
+  intro: boolean;
 
   onMapReady(map) {
     this.initPolygon(map);
+    this.intro = true;
   }
 
   getIntro() {
@@ -44,9 +45,6 @@ export class AppComponent {
    
 
     function smoothZoom(map, max, cnt) {
-      console.log(cnt);
-      console.log(max);
-
       if (cnt >= max) {
         return;
       } 
@@ -62,7 +60,12 @@ export class AppComponent {
     woodLawn.addListener('click', function() {
       map.panTo({lat: 40.899284, lng: -73.874}, true);
       smoothZoom(map, 17, map.getZoom());
+
+      console.log(this.intro);
+
       this.intro = false;
+
+      console.log(this.intro + 'is the value of intro.');
 
       var content = document.getElementById('content-box');
       content.childNodes[0].textContent = "Woodlawn";

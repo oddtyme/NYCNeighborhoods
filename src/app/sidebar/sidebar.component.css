@@ -39,7 +39,8 @@ button {
 mat-drawer-content {
   overflow-x: hidden;
   position: relative;
-  left: 15px; 
+  left: 15px;
+  width: 400px; 
 }
 
 button:hover {
