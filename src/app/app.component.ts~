@@ -64,6 +64,7 @@ export class AppComponent {
       content.childNodes[0].textContent = "Woodlawn";
       content.childNodes[1].textContent = "Woodlawn, also known as Woodlawn Heights, is a predominantly Irish-American working class neighborhood at the very north end of the Bronx.";
       content.childNodes[2].textContent = "Bearing the name 'Little Ireland', Woodlawn is the primary center of Irish culture in New York.";
+      content.childNodes[3].textContent = "The neighborhood has a suburban, small-town feel that favors family life."
     });
 
     google.maps.event.addListener(woodLawn, "mouseover",function() {

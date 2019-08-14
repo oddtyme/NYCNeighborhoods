@@ -22,6 +22,10 @@ export class AppComponent {
     this.initPolygon(map);
   }
 
+  getIntro() {
+    return this.intro;
+  }
+
   initPolygon(map: any) {
     var woodlawnCoords = [
       {lat: 40.895262, lng: -73.876929},

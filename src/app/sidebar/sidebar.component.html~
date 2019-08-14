@@ -1,16 +1,16 @@
 <mat-drawer-container class="sidebar-container">
 	  <mat-drawer mode="side" opened>
-	    <button id="summary">Summary</button>
-	    <button id="living">Living</button>
-	    <button id="food">Food</button>
-	    <button id="rec">Recreation</button>
-	    <button id="transit">Transit</button>
-	    <button id="schools">Schools</button>
+	    <button id="summary" ng-Click="showSummary()">Summary</button>
+	    <button id="living" onClick="showLiving()">Living</button>
+	    <button id="food" onClick="showFood()">Food</button>
+	    <button id="rec" onClick="showRec()">Recreation</button>
+	    <button id="transit" onClick="showTransit()">Transit</button>
+	    <button id="schools" onClick="showSchools()">Schools</button>
 	    <button id="crime">Crime</button>
 	  </mat-drawer>
 	    <mat-drawer-content>
 	      <div id="content-box">
-	        <p>Welcome to NYCNeighborhoods!</p>
+	        <p id="subheading">Welcome to NYCNeighborhoods!</p>
 		<p>This application is designed to provide helpful information about each neighborhood in New York City.</p>
 		<p>You can view the information categories on the sidebar to the left.</p>
 		<p>Each Neighborhood is highlighted in blue on the map. Click on one to explore its characteristics.</p>

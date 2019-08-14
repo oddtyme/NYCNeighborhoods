@@ -1,11 +1,11 @@
 <mat-drawer-container class="sidebar-container">
 	  <mat-drawer mode="side" opened>
-	    <button id="summary">Summary</button>
-	    <button id="living">Living</button>
-	    <button id="food">Food</button>
-	    <button id="rec">Recreation</button>
-	    <button id="transit">Transit</button>
-	    <button id="schools">Schools</button>
+	    <button id="summary" (click)="showSummary()">Summary</button>
+	    <button id="living" onClick="showLiving()">Living</button>
+	    <button id="food" onClick="showFood()">Food</button>
+	    <button id="rec" onClick="showRec()">Recreation</button>
+	    <button id="transit" onClick="showTransit()">Transit</button>
+	    <button id="schools" onClick="showSchools()">Schools</button>
 	    <button id="crime">Crime</button>
 	  </mat-drawer>
 	    <mat-drawer-content>
