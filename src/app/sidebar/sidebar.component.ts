@@ -13,4 +13,10 @@ export class SidebarComponent implements OnInit {
   ngOnInit() {
   }
 
+  showSummary(intro) {
+    if (!intro) {
+      document.getElementById('content-box').innerHTML = "Test";
+    }
+  }
+
 }

@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { AgmCoreModule } from '@agm/core';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import {MatSidenavModule} from '@angular/material/sidenav'
+import { MatSidenavModule} from '@angular/material/sidenav'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
@@ -16,7 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule.
+    BrowserAnimationsModule,
     CommonModule,
     FormsModule,
     AgmCoreModule.forRoot({

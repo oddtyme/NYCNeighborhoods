@@ -1,12 +1,12 @@
 <mat-drawer-container class="sidebar-container">
 	  <mat-drawer mode="side" opened>
-	    <a href="#">Summary</a>
-	    <a href="#">Living</a>
-	    <a href="#">Food</a>
-	    <a href="#">Recreation</a>
-	    <a href="#">Transit</a>
-	    <a href="#">Schools</a>
-	    <a href="#">Crime</a>
+	    <button id="summary">Summary</button>
+	    <button id="living">Living</button>
+	    <button id="food">Food</button>
+	    <button id="rec">Recreation</button>
+	    <button id="transit">Transit</button>
+	    <button id="schools">Schools</button>
+	    <button id="crime">Crime</button>
 	  </mat-drawer>
 	    <mat-drawer-content>
 	      <div id="intro">
